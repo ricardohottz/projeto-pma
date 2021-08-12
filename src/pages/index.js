@@ -3,11 +3,12 @@ import {Button} from '@material-ui/core'
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <div >
+
         <h2>Subtitulo</h2>
-        <button color={}>Clique aqui</button>
+        <Button color='primary' variant='contained'>Clique aqui</Button>
         </div>
 
     </Layout>
