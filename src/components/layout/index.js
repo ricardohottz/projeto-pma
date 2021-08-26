@@ -17,9 +17,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flex: '1 1 auto',
         overflow: 'hidden',
-        backgroundColor: '#666',
-        paddingTop: '170px',
-       paddingLeft:'170px'
+        backgroundColor: '#EBEAEA',
+        marginTop: '170px',
+        paddingLeft:'10px'
+       
     },
 
     contentContainer: {
@@ -49,7 +50,7 @@ export default function Layout({children, title}){
         <div className={classes.root}>
             <TopBar/>
 
-            <MenuBar/>
+            <MenuBar>oi</MenuBar>
             <div className={classes.wrapper}>
 
                 <div className={classes.contentContainer}>

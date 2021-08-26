@@ -5,7 +5,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 const useStyles = makeStyles((theme) => ({
     root:{
        boxShadow: 'none',
-       backgroundColor: '#6fff'
+       backgroundColor: '#0D6CB0',
+       height:'170px',
+       paddingLeft:'230px'
 
     }
 }))
@@ -16,7 +18,7 @@ export default function TopBar(){
     return(
         <AppBar className={styles.root}>
             <Toolbar>
-
+oi
             </Toolbar>
         </AppBar>
     )
