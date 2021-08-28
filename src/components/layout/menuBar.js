@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import TopMenuBar from './menuBar/top';
 import ChamadaDeashboard from './menuBar/caixaDeashboard';
+import MenuPrincipal from './menuEstrutura/menu';
 
 const useStyles = makeStyles((theme) => ({
     root:{
@@ -20,7 +21,7 @@ export default function MenuBar(){
             
             <TopMenuBar/>
             <ChamadaDeashboard/>
-            Menu Bar
+            <MenuPrincipal/>
         </div>
     )
 }
