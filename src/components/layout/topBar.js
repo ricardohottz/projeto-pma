@@ -2,7 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import { Avatar, ListItemIcon } from '@material-ui/core';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
-import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
+import { Button } from '@material-ui/core';
+import {Link} from '@material-ui/core'
 
 
 const ufisa =[
@@ -24,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     colunaCentral:{
         padding:'10px', 
         display:'flex',
+        flexDirection:'column',
         height:'150px',
         width:'600px'
     },
@@ -43,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
     },
     colunaDireita_esquerda:{
         display:'flex',
-        width:'200px'
+        width:'200px',
+        paddingLeft:'30px'
     },
     topo:{
         paddingTop:'10px', 
@@ -72,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
     setaUfisa: {
         position:'absolute',
         top:'92px',
-        right:'507px',
+        left:'1155px',
         alignItems:'right'
     },
     tituloUfisa:{
@@ -100,7 +103,42 @@ const useStyles = makeStyles((theme) => ({
         flexDirection:'column',
         paddingLeft:'10px',
         color:'black'
+    },
+    searchCampo:{
+        marginLeft:'40px',
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'spaceBetween'
+    },
+    botao:{
+        backgroundColor:'#0FF04E',
+        marginLeft:'7px'
+    },
+    tituloSecao:{
+        paddingTop:'15px',
+        marginLeft:'40px',
+        display:'flex',
+        flexDirection:'row',
+        alignItems:'center'
+    },
+    tituloSecaoPrincipal:{
+        fontSize:'36px',
+        fontWeight:'bold',
+        textShadow:'2px 2px #000111'
+    },
+    tituloSecaosecundario:{
+        marginLeft:'100px',
+        fontSize:'20px',
+        fontWeight:'bold',
+    },
+    menuHorizontal:{
+        paddingTop:'20px',
+        paddingRight:'10px',
+        paddingLeft:'20px',
+        color:'white',
+        cursor:'pointer'
     }
+    
 }))
 
 export default function TopBar(){
@@ -109,7 +147,22 @@ export default function TopBar(){
     return(
         <AppBar className={styles.root}>
             <div className={styles.topo}>
-                <div className={styles.colunaCentral}>Olá</div>
+                <div className={styles.colunaCentral}>
+                    <div className={styles.searchCampo}>
+                        <input style={{padding:'10px',borderRadius:'7px',width:'470px', border:'0px'}} type="text" placeholder="BUSCAR POR PALAVRA CHAVE"/>
+                        <Button className={styles.botao}>Buscar</Button>
+                    </div>
+                    <div className={styles.tituloSecao}>
+                        <div className={styles.tituloSecaoPrincipal}>Cadastro</div>
+                        <div className={styles.tituloSecaosecundario}>cadastro / empresas</div>
+                    </div>
+                    <div className={styles.menuHorizontal}>
+                        <Link className={styles.menuHorizontal}>Home</Link>
+                        <Link className={styles.menuHorizontal}>Pessoas</Link>
+                        <Link className={styles.menuHorizontal}>Empresas</Link>
+                        <Link className={styles.menuHorizontal}>Imóveis</Link>
+                    </div>
+                </div>
                 <div className={styles.colunaDireita}>
                     <div className={styles.colunaDireita_esquerda}>
                     <img src='/Gestão-Fiscal-e-Tributária 1.png' alt='carimbo'/>
