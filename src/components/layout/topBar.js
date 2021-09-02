@@ -187,6 +187,7 @@ export default function TopBar(){
                                         <div className={styles.CaixaValorUfisa}>R$ 100,00</div>
                                 </div>
                                 <div className={styles.setaUfisa}>
+                                    {/* usar float action button */}
                                     <div><img src='/seta-direita.png' alt='ufisa'/></div>
                                     <div><img src='/seta-esquerda.png' alt='ufisa'/></div>
                                 </div>

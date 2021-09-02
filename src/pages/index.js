@@ -1,6 +1,8 @@
 import Layout from "../components/layout"
 import {Button} from '@material-ui/core'
 import Busca from '../components/cadastro/busca'
+import Cabecalho from "../components/cadastro/cabecalho"
+import ControlledAccordions from "../components/accordion"
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
 
         <div>
         <Busca/>
+        <ControlledAccordions/>
+        <Cabecalho/>
         <h2>Subtitulo</h2>
         <Button color='primary' variant='contained'>Clique aqui</Button>
         </div>
