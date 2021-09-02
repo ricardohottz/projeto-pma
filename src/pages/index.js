@@ -11,7 +11,9 @@ export default function Home() {
         <div>
         <Busca/>
         <ControlledAccordions/>
+        <ControlledAccordions/>
         <Cabecalho/>
+        
         <h2>Subtitulo</h2>
         <Button color='primary' variant='contained'>Clique aqui</Button>
         </div>
