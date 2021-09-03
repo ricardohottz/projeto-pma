@@ -26,7 +26,7 @@ const primaryMenu = [
     {id:1, label:'Cadastro', path:'/cadastro', icon: CreateOutlinedIcon},
     {id:2, label:'Tributário', path:'/tributario', icon: NoteAddOutlinedIcon},
     {id:3, label:'Legislação', path:'/legislacao', icon: LibraryBooksOutlinedIcon},
-    {id:4, label:'Comunicação Interna', path:'/comunicacao_interna', icon: PermPhoneMsgOutlinedIcon},
+    {id:4, label:'Comunicação', path:'/comunicacao_interna', icon: PermPhoneMsgOutlinedIcon},
     {id:5, label:'Relatórios', path:'/relatorios', icon: AssessmentOutlinedIcon},
     {id:6, label:'Fiscalização', path:'/fiscalizacao', icon: ImageSearchOutlinedIcon}
 ]
@@ -34,16 +34,28 @@ const primaryMenu = [
 
 const useStyles = makeStyles((theme) => ({
     menu:{
-        padding:'15px',
-        color:'white'
+        padding:'1px',
+        color:'white',
+        marginTop:'10px',
+        marginLeft:'5px'
+        
+
     },
+    listitem:{
+        color:'white',
+        marginTop:'2px',
+        '&:hover':{
+            backgroundColor:'#050F1A'
+        }
+
+    }
     
 }))
 
 
 export default function MenuPrincipal(){
     const router = useRouter()
-    const styles = useStyles()
+    const classes = useStyles()
     
     const content = (
                     <div  display='flex' flexdirection='column'>
@@ -52,11 +64,12 @@ export default function MenuPrincipal(){
                                 const Icon = item.icon
                                 return(
                                     <ListItem
+                                        className={classes.listitem}
                                         key={item.id}
                                         button
-                                        style={{color:'white', padding:'1px'}}
+                                        
                                         >
-                                        <ListItemIcon style={{paddingLeft:'17px'}}>
+                                        <ListItemIcon style={{paddingLeft:'15px', margin:'0', display:'flex', width:'10px'}}>
                                             <Icon style={{color:'white'}}/>
                                         </ListItemIcon>
                                         <ListItemText 
@@ -72,7 +85,7 @@ export default function MenuPrincipal(){
 
     return(
         <>
-        <div className={styles.menu}>NAVEGAÇÃO</div>
+        <div className={classes.menu}>NAVEGAÇÃO</div>
         <div >
             {content}
         </div>

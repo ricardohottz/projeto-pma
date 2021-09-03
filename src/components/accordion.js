@@ -11,6 +11,9 @@ import { Divider } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
 import PersonAddDisabledIcon from '@material-ui/icons/PersonAddDisabled';
 import LinkIcon from '@material-ui/icons/Link';
+import PeopleIcon from '@material-ui/icons/People';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import MailIcon from '@material-ui/icons/Mail';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,6 +22,11 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '0px',
       marginBottom:'15px'
       
+    },
+    accordionLinha:{
+        display:'flex',
+        alignItems:'center',
+        width:'100%'
     },
     heading: {
       fontSize: theme.typography.pxToRem(20),
@@ -32,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
     secondaryHeading: {
       fontSize: theme.typography.pxToRem(15),
       color: theme.palette.text.secondary,
+    },
+    Accordion:{
+        display:'flex',
+        alignItems:'center'
     },
 
     corpoSocietario:{
@@ -98,10 +110,14 @@ export default function ControlledAccordions() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1bh-content"
               id="panel1bh-header"
+              
             >
-              
-              <Typography className={classes.heading}>Corpo Societário</Typography>
-              
+                <div className={classes.accordionLinha}>
+                    <PeopleIcon style={{color:'#B2B2B2'}}/>
+                    <Typography displayInline className={classes.heading}>Corpo Societário</Typography>
+                
+                </div>
+                    
             </AccordionSummary>
             <AccordionDetails>
           
@@ -124,11 +140,11 @@ export default function ControlledAccordions() {
                       <Divider />
                       <div className={classes.corpoSocietario_col1_linha}>
                           <div className = {classes.bloco}>
-                            <div className={classes.cabecas}>CGM: </div> 
-                            200010</div>
+                            <div className={classes.cabecas}><MailIcon/> </div> 
+                            ricardohottz@gmail.com</div>
                           <div className = {classes.bloco}>
-                          <div className={classes.cabecas}>CPF:</div>
-                            053.892.347-40</div>
+                          <div className={classes.cabecas}><WhatsAppIcon/></div>
+                            21 96439-5248</div>
                       </div>
                   </div>
                   <div className={classes.corpoSocietario_col2}> 
@@ -140,6 +156,44 @@ export default function ControlledAccordions() {
                   </div>
               </div>
             </AccordionDetails>
+            <AccordionDetails>
+          
+          <div className={classes.corpoSocietario}>
+          
+              <div className={classes.corpoSocietario_col1}>
+                  <div className={classes.corpoSocietario_col1_linha}>
+                      <div className={classes.cabecas}>NOME: </div>
+                      Ricardo Hottz de Araujo Junqueira Hottz
+                  </div>
+                  <Divider />
+                  <div className={classes.corpoSocietario_col1_linha}>
+                      <div className = {classes.bloco}>
+                        <div className={classes.cabecas}>CGM: </div> 
+                        200010</div>
+                      <div className = {classes.bloco}>
+                      <div className={classes.cabecas}>CPF:</div>
+                        053.892.347-40</div>
+                  </div>
+                  <Divider />
+                  <div className={classes.corpoSocietario_col1_linha}>
+                      <div className = {classes.bloco}>
+                        <div className={classes.cabecas}><MailIcon/> </div> 
+                        ricardohottz@gmail.com</div>
+                      <div className = {classes.bloco}>
+                      <div className={classes.cabecas}><WhatsAppIcon/></div>
+                        21 96439-5248</div>
+                  </div>
+              </div>
+              <div className={classes.corpoSocietario_col2}> 
+                <PersonAddDisabledIcon color='disabled' className={classes.bloco}/>
+                <LinkIcon color='disabled' className={classes.bloco}/>
+              </div>
+              <div className={classes.corpoSocietario_col3}>
+                  <Button variant="outlined" color="primary" startIcon={<PersonIcon/>}>Visitar Perfil</Button>
+              </div>
+          </div>
+        </AccordionDetails>
           </Accordion>
+          
         </div>
     )}
