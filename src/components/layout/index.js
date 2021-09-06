@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         height:'100vh',
         width:'100vw',
-        overflow:'hidden'
+        overflow:'hidden',
+       
     },
     
     wrapper:{
@@ -18,8 +19,7 @@ const useStyles = makeStyles((theme) => ({
         flex: '1 1 auto',
         overflow: 'hidden',
         backgroundColor: '#EBEAEA',
-        marginTop: '170px',
-        paddingLeft:'10px'
+        paddingLeft:'0px'
        
     },
 
@@ -48,7 +48,7 @@ export default function Layout({children, title}){
         </Head>
 
         <div className={classes.root}>
-            <TopBar/>
+            
 
             <MenuBar>oi</MenuBar>
             <div className={classes.wrapper}>

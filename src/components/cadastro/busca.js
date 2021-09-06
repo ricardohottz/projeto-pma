@@ -23,6 +23,7 @@ const usestyles = makeStyles((theme) => ({
     busca:{
         padding: '40px',
         paddingTop:'40px',
+        paddingBottom:'30px',
         display:'flex',
         flexDirection:'row'
     }

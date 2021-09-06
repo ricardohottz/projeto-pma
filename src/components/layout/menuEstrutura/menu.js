@@ -1,4 +1,5 @@
 import { useRouter } from 'next/dist/client/router';
+import Link from 'next/link'
 import {
     makeStyles,
     Hidden,
@@ -26,7 +27,7 @@ const primaryMenu = [
     {id:1, label:'Cadastro', path:'/cadastro', icon: CreateOutlinedIcon},
     {id:2, label:'Tributário', path:'/tributario', icon: NoteAddOutlinedIcon},
     {id:3, label:'Legislação', path:'/legislacao', icon: LibraryBooksOutlinedIcon},
-    {id:4, label:'Comunicação', path:'/comunicacao_interna', icon: PermPhoneMsgOutlinedIcon},
+    {id:4, label:'Comunicação', path:'/comunicacao', icon: PermPhoneMsgOutlinedIcon},
     {id:5, label:'Relatórios', path:'/relatorios', icon: AssessmentOutlinedIcon},
     {id:6, label:'Fiscalização', path:'/fiscalizacao', icon: ImageSearchOutlinedIcon}
 ]
@@ -63,20 +64,24 @@ export default function MenuPrincipal(){
                             {primaryMenu.map((item) => {
                                 const Icon = item.icon
                                 return(
-                                    <ListItem
-                                        className={classes.listitem}
-                                        key={item.id}
-                                        button
-                                        
-                                        >
-                                        <ListItemIcon style={{paddingLeft:'15px', margin:'0', display:'flex', width:'10px'}}>
-                                            <Icon style={{color:'white'}}/>
-                                        </ListItemIcon>
-                                        <ListItemText 
-                                        primary={item.label}
-                                        />
+                                    <Link key={item.id} href={item.path}>
+                                    
+                                        <ListItem
+                                            className={classes.listitem}
+                                            
+                                            button
+                                           
+                                            >
+                                            <ListItemIcon style={{paddingLeft:'15px', margin:'0', display:'flex', width:'10px'}}>
+                                                <Icon style={{color:'white'}}/>
+                                            </ListItemIcon>
+                                            <ListItemText 
+                                            primary={item.label}
+                                            />
 
-                                    </ListItem>
+                                        </ListItem>
+                                    </Link>
+                                    
                                 )
                             })}
                         </div>

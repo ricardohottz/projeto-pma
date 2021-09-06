@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
        boxShadow: 'none',
        backgroundColor: '#0D6CB0',
        height:'170px',
-       paddingLeft:'230px'
+    
+       position:'static'
 
     },
     colunaCentral:{
@@ -141,11 +142,11 @@ const useStyles = makeStyles((theme) => ({
     
 }))
 
-export default function TopBar(){
+export default function TopBar({tituloCabecalho, menu}){
     const styles = useStyles()
 
     return(
-        <AppBar className={styles.root}>
+        <AppBar  positionRelative className={styles.root}>
             <div className={styles.topo}>
                 <div className={styles.colunaCentral}>
                     <div className={styles.searchCampo}>
@@ -153,14 +154,14 @@ export default function TopBar(){
                         <Button className={styles.botao}>Buscar</Button>
                     </div>
                     <div className={styles.tituloSecao}>
-                        <div className={styles.tituloSecaoPrincipal}>Cadastro</div>
+                        <div className={styles.tituloSecaoPrincipal}>{tituloCabecalho}</div>
                         <div className={styles.tituloSecaosecundario}>cadastro / empresas</div>
                     </div>
                     <div className={styles.menuHorizontal}>
-                        <Link className={styles.menuHorizontal}>Home</Link>
-                        <Link className={styles.menuHorizontal}>Pessoas</Link>
-                        <Link className={styles.menuHorizontal}>Empresas</Link>
-                        <Link className={styles.menuHorizontal}>Imóveis</Link>
+                        <Link className={styles.menuHorizontal}>{menu.menu1}</Link>
+                        <Link className={styles.menuHorizontal}>{menu.menu2}</Link>
+                        <Link className={styles.menuHorizontal}>{menu.menu3}</Link>
+                        <Link className={styles.menuHorizontal}>{menu.menu4}</Link>
                     </div>
                 </div>
                 <div className={styles.colunaDireita}>

@@ -5,17 +5,16 @@ import Cabecalho from "../components/cadastro/cabecalho"
 import ControlledAccordions from "../components/accordion"
 import TopBar from "../components/layout/topBar"
 
-export default function Home() {
+export default function Cadastro() {
   return (
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho='HOME' menu={{menu1:'Home', menu2:'Memorandos'}}/>
+        <TopBar tituloCabecalho ='Cadastro' menu={{menu1:'Home', menu2:'Imóveis', menu3:'Empresas', menu3:'Pessoas'}}/>
         <Busca/>
         <ControlledAccordions/>
         <ControlledAccordions/>
-        <Cabecalho/>
-        
+      
         <h2>Subtitulo</h2>
         <Button color='primary' variant='contained'>Clique aqui</Button>
         </>
