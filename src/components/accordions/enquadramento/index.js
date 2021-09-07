@@ -1,8 +1,18 @@
 import AccordionPadrao from '../accordion'
+import dynamic from "next/dynamic";
+
+
 export default function Enquadramento(){
+    const MapWithNoSSR = dynamic(() => import("../../map"), {
+        ssr: false
+      })
     return(
         <AccordionPadrao title='Enquadramento'>
-            <div>Testando</div>
+            <main>
+                <div id="map">
+                    <MapWithNoSSR />
+                </div>
+            </main>
         </AccordionPadrao>
     )
 }
