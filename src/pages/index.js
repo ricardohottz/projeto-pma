@@ -4,6 +4,7 @@ import Busca from '../components/cadastro/busca'
 import Cabecalho from "../components/cadastro/cabecalho"
 import ControlledAccordions from "../components/accordion"
 import TopBar from "../components/layout/topBar"
+import Enquadramento from "../components/accordions/enquadramento"
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <TopBar tituloCabecalho='HOME' menu={{menu1:'Home', menu2:'Memorandos'}}/>
         <Busca/>
         <ControlledAccordions/>
-        <ControlledAccordions/>
+        <Enquadramento/>
         <Cabecalho/>
         
         <h2>Subtitulo</h2>
