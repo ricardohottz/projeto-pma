@@ -2,13 +2,13 @@ import AccordionPadrao from '../accordion'
 
 
 
-export default function Enquadramento(){
+export default function Issqn(){
     
     return(
-        <AccordionPadrao title='Enquadramento'>
+        <AccordionPadrao title='ISSQN'>
             <main>
                 <div >
-                    Enquadramento
+                    ISSQN
                 </div>
             </main>
         </AccordionPadrao>

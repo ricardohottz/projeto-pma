@@ -2,13 +2,13 @@ import AccordionPadrao from '../accordion'
 
 
 
-export default function Enquadramento(){
+export default function InconsistenciaDeDados(){
     
     return(
-        <AccordionPadrao title='Enquadramento'>
+        <AccordionPadrao title='Inconsistência de Dados'>
             <main>
                 <div >
-                    Enquadramento
+                    Inconsistencia de dados
                 </div>
             </main>
         </AccordionPadrao>

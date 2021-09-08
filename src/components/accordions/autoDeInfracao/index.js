@@ -2,13 +2,13 @@ import AccordionPadrao from '../accordion'
 
 
 
-export default function Enquadramento(){
+export default function AutoDeInfracao(){
     
     return(
-        <AccordionPadrao title='Enquadramento'>
+        <AccordionPadrao title='Auto de Infração'>
             <main>
                 <div >
-                    Enquadramento
+                    Auto de infracao
                 </div>
             </main>
         </AccordionPadrao>

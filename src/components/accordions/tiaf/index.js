@@ -2,13 +2,13 @@ import AccordionPadrao from '../accordion'
 
 
 
-export default function Enquadramento(){
+export default function Tiaf(){
     
     return(
-        <AccordionPadrao title='Enquadramento'>
+        <AccordionPadrao title='TIAF'>
             <main>
                 <div >
-                    Enquadramento
+                    TIAF
                 </div>
             </main>
         </AccordionPadrao>
