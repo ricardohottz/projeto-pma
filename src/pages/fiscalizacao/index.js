@@ -11,6 +11,7 @@ import Intimacao from '../../components/accordions/intimacao'
 import Issqn from '../../components/accordions/issqn'
 import Tiaf from '../../components/accordions/tiaf'
 import LocalizacaoDeObra from '../../components/accordions/localizacaoDeObra'
+import SituacaoEconomica from "../../components/accordions/situacaoEconomica"
 
 
 
@@ -28,6 +29,7 @@ export default function FiscalizacaoPage() {
         <ApuracaoDeTaxa/>
         <Intimacao/>
         <LocalizacaoDeObra/>
+        <SituacaoEconomica/>
         <Comunicacao/>
       
         <h2>Subtitulo</h2>

@@ -4,6 +4,8 @@ import Busca from '../components/cadastro/busca'
 import Cabecalho from "../components/cadastro/cabecalho"
 import ControlledAccordions from "../components/accordion"
 import TopBar from "../components/layout/topBar"
+import Example from "../components/charts/issqn"
+
 
 export default function Legislacao() {
   return (
@@ -11,6 +13,8 @@ export default function Legislacao() {
 
         <>
         <TopBar tituloCabecalho ='Legislação' menu={{menu1:'Home', menu2:'Imóveis', menu3:'Empresas', menu3:'Pessoas'}}/>
+        <Example/>
+        
         <Busca/>
         <ControlledAccordions/>
         <ControlledAccordions/>
