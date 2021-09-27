@@ -1,4 +1,5 @@
 import {makeStyles} from '@material-ui/core'
+import Link from 'next/link'
 
 const useStyles = makeStyles((theme) => ({
    caixa: {
@@ -21,7 +22,9 @@ export default function ChamadaDeashboard(){
     return(
         <div className={styles.caixa}>
                 <div className={styles.home}><img src='/home.svg' alt='home'/></div>
-                <div>Deshboard - Início</div>
+                <Link href='/dashboard/tributario'>
+                    <a>Dashboard - Início</a>
+                </Link>
         </div>
     )
 }
