@@ -1,4 +1,5 @@
 import AccordionPadrao from '../accordion'
+import DataGridDemo from '../../dataGrid/tributos'
 
 
 
@@ -8,7 +9,7 @@ export default function Issqn(){
         <AccordionPadrao title='ISSQN'>
             <main>
                 <div >
-                    ISSQN
+                    <DataGridDemo/>
                 </div>
             </main>
         </AccordionPadrao>

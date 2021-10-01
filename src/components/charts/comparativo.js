@@ -61,7 +61,7 @@ export default class GraficosISS extends PureComponent {
 
   render() {
     return (
-      <div style={{backgroundColor:'#ffff', width:'900px', borderRadius:'3px', boxShadow:'0px 1px 3px  gray', marginLeft:'45px', marginTop:'45px'}}>
+      <div style={{backgroundColor:'#ffff', width:'900px', borderRadius:'3px', boxShadow:'0px 1px 3px  gray', marginLeft:'45px'}}>
         <div style={{padding:'20px'}}>Gráfico comparativo</div>
         <LineChart
           backgro

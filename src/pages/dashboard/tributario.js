@@ -11,8 +11,8 @@ export default function Dashboard() {
 
         <>
 
-        <TopBar tituloCabecalho ='Dashboard' menu={{menu1:'Tributário', menu2:'Estratégico', menu3:'Processual'}} />
-
+        <TopBar   tituloCabecalho ='Dashboard' menu={{menu1:'Tributário', menu2:'Estratégico', menu3:'Processual'}} cor='#ffff'/>
+         
           <GraphicCards/>
           <GraficoPrincipal/>
        

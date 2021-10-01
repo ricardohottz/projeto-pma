@@ -4,7 +4,7 @@ import { Avatar, ListItemIcon } from '@material-ui/core';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 import { Button } from '@material-ui/core';
 import {Link} from '@material-ui/core'
-import { LinkedCameraRounded } from '@material-ui/icons';
+
 
 
 const ufisa =[
@@ -143,8 +143,11 @@ const useStyles = makeStyles((theme) => ({
     
 }))
 
-export default function TopBar({tituloCabecalho, menu}){
+export default function TopBar({tituloCabecalho, menu},cor){
     const styles = useStyles()
+    console.log(cor)
+    console.log(menu)
+    console.log(tituloCabecalho)
    
     return(
         <AppBar  positionRelative className={styles.root}>
@@ -159,8 +162,8 @@ export default function TopBar({tituloCabecalho, menu}){
                         <div className={styles.tituloSecaosecundario}>cadastro / empresas</div>
                     </div>
                     <div className={styles.menuHorizontal}>
-                        <Link className={styles.menuHorizontal} ><a>{menu.menu1}</a></Link>
-                        <Link className={styles.menuHorizontal} > <a>{menu.menu2}</a></Link>
+                        <Link className={styles.menuHorizontal}><a>{menu.menu1}</a></Link>
+                        <Link className={styles.menuHorizontal}><a>{menu.menu2}</a></Link>
                         <Link className={styles.menuHorizontal}>{menu.menu3}</Link>
                         <Link className={styles.menuHorizontal}>{menu.menu4}</Link>
                     </div>
