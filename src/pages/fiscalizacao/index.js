@@ -16,11 +16,17 @@ import SituacaoEconomica from "../../components/accordions/situacaoEconomica"
 
 
 export default function FiscalizacaoPage() {
+  const menu = [
+    {id:'5', menu:'Econômico', path:'/dashboard/tributario'}, 
+    {id:'6',menu:'Pessoa', path:'/dashboard/estrategico'},
+    {id:'7',menu:'Imóvel', path:'/dashboard/estrategico'},
+
+  ]
   return (
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Fiscalizacao' menu={{menu1:'Pessoas', menu2:'Empresas', menu3:'Eventuais', menu4:'Cálculos'}}/>
+        <TopBar tituloCabecalho ='Fiscalizacao' menu={menu}/>
         <Busca/>
         <Fiscalizacao/>
         <Issqn/>

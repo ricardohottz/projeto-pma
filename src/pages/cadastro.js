@@ -12,12 +12,17 @@ import PessoasAutorizadas from "../components/accordions/pessoasAutorizadas"
 import ProcessosEInteracoes from "../components/accordions/processosInteracoes"
 
 export default function Cadastro() {
-  
+  const menu = [
+    {id:'8', menu:'Econômico', path:'/dashboard/tributario'}, 
+    {id:'9',menu:'Pessoa', path:'/dashboard/estrategico'},
+    {id:'10',menu:'Imóvel', path:'/dashboard/estrategico'},
+
+  ]
   return (
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Cadastro' menu={{menu1:'Home', menu2:'Imóveis', menu3:'Empresas', menu3:'Pessoas'}}/>
+        <TopBar tituloCabecalho ='Cadastro' menu={menu}/>
         <Busca/>
 
         <Localizacao/>

@@ -5,13 +5,16 @@ import GraphicCards from "../../components/charts/cards"
 
 
 export default function Dashboard() {
-  
+  const menu = [
+    {id:3, menu:'Tributário', path:'/dashboard/tributario'}, 
+    {id:4, menu:'Estratégico', path:'/dashboard/estrategico'}
+  ]
   return (
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
 
-        <TopBar   tituloCabecalho ='Dashboard' menu={{menu1:'Tributário', menu2:'Estratégico', menu3:'Processual'}} cor='#ffff'/>
+        <TopBar   tituloCabecalho ='Dashboard' menu={menu}/>
          
           <GraphicCards/>
           <GraficoPrincipal/>

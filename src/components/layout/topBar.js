@@ -143,11 +143,20 @@ const useStyles = makeStyles((theme) => ({
     
 }))
 
-export default function TopBar({tituloCabecalho, menu},cor){
+export default function TopBar(props){
     const styles = useStyles()
-    console.log(cor)
-    console.log(menu)
-    console.log(tituloCabecalho)
+    
+
+    function montaMenuHorizontal(props){
+        const menu = props.menu
+        return(
+
+            menu.map((item) => ( 
+            <Link key= {item.id} className={styles.menuHorizontal} href={item.path}>{item.menu}</Link>)
+            
+            )
+        )
+    }
    
     return(
         <AppBar  positionRelative className={styles.root}>
@@ -158,19 +167,17 @@ export default function TopBar({tituloCabecalho, menu},cor){
                         <Button className={styles.botao}>Buscar</Button>
                     </div>
                     <div className={styles.tituloSecao}>
-                        <div className={styles.tituloSecaoPrincipal}>{tituloCabecalho}</div>
+                        <div className={styles.tituloSecaoPrincipal}>{props.tituloCabecalho}</div>
                         <div className={styles.tituloSecaosecundario}>cadastro / empresas</div>
                     </div>
                     <div className={styles.menuHorizontal}>
-                        <Link className={styles.menuHorizontal}><a>{menu.menu1}</a></Link>
-                        <Link className={styles.menuHorizontal}><a>{menu.menu2}</a></Link>
-                        <Link className={styles.menuHorizontal}>{menu.menu3}</Link>
-                        <Link className={styles.menuHorizontal}>{menu.menu4}</Link>
+                        {montaMenuHorizontal(props)}
+                        
                     </div>
                 </div>
                 <div className={styles.colunaDireita}>
                     <div className={styles.colunaDireita_esquerda}>
-                    <img src='/Gestão-Fiscal-e-Tributária 1.png' alt='carimbo'/>
+                    <image src='/Gestão-Fiscal-e-Tributária 1.png' alt='carimbo'/>
                     </div>
                     <div className={styles.colunaDireita_direita}>
                         <div className={styles.caixaUsuario}>
@@ -188,13 +195,13 @@ export default function TopBar({tituloCabecalho, menu},cor){
                                     <div className={styles.tituloUfisa}>UFISA 2010</div>
 
                                     <div className={styles.valorUfisa}>
-                                        <div><img src='/mdi_cash-marker.png' alt='ufisa'/></div>
+                                        <div><image src='/mdi_cash-marker.png' alt='ufisa'/></div>
                                         <div className={styles.CaixaValorUfisa}>R$ 100,00</div>
                                 </div>
                                 <div className={styles.setaUfisa}>
                                     {/* usar float action button */}
-                                    <div><img src='/seta-direita.png' alt='ufisa'/></div>
-                                    <div><img src='/seta-esquerda.png' alt='ufisa'/></div>
+                                    <div><image src='/seta-direita.png' alt='ufisa'/></div>
+                                    <div><image src='/seta-esquerda.png' alt='ufisa'/></div>
                                 </div>
 
                             </div>

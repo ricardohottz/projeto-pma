@@ -8,11 +8,15 @@ import Example from "../components/charts/issqn"
 
 
 export default function Legislacao() {
+  const menu = [
+    {id:15, menu:'Tributário', path:'/dashboard/tributario'}, 
+    {id:16, menu:'Estratégico', path:'/dashboard/estrategico'}
+  ]
   return (
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Legislação' menu={{menu1:'Home', menu2:'Imóveis', menu3:'Empresas', menu3:'Pessoas'}}/>
+        <TopBar tituloCabecalho ='Legislação' menu={menu}/>
         <Example/>
         
         <Busca/>

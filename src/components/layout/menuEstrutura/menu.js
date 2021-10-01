@@ -24,12 +24,12 @@ import AssessmentOutlinedIcon from '@material-ui/icons/AssessmentOutlined';//rel
 import ImageSearchOutlinedIcon from '@material-ui/icons/ImageSearchOutlined';//fiscalizacao
 
 const primaryMenu = [
-    {id:1, label:'Cadastro', path:'/cadastro', icon: CreateOutlinedIcon},
-    {id:2, label:'Tributário', path:'/tributario', icon: NoteAddOutlinedIcon},
-    {id:3, label:'Legislação', path:'/legislacao', icon: LibraryBooksOutlinedIcon},
-    {id:4, label:'Comunicação', path:'/comunicacao', icon: PermPhoneMsgOutlinedIcon},
-    {id:5, label:'Relatórios', path:'/relatorios', icon: AssessmentOutlinedIcon},
-    {id:6, label:'Fiscalização', path:'/fiscalizacao', icon: ImageSearchOutlinedIcon}
+    {id:20, label:'Cadastro', path:'/cadastro', icon: CreateOutlinedIcon},
+    {id:30, label:'Tributário', path:'/tributario', icon: NoteAddOutlinedIcon},
+    {id:40, label:'Legislação', path:'/legislacao', icon: LibraryBooksOutlinedIcon},
+    {id:50, label:'Comunicação', path:'/comunicacao', icon: PermPhoneMsgOutlinedIcon},
+    {id:60, label:'Relatórios', path:'/relatorios', icon: AssessmentOutlinedIcon},
+    {id:70, label:'Fiscalização', path:'/fiscalizacao', icon: ImageSearchOutlinedIcon}
 ]
 
 
@@ -64,7 +64,7 @@ export default function MenuPrincipal(){
                             {primaryMenu.map((item) => {
                                 const Icon = item.icon
                                 return(
-                                    <Link key={item.id} href={item.path}>
+                                    <Link key={item.id} href={item.path} passHref>
                                     
                                         <ListItem
                                             className={classes.listitem}

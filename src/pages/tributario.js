@@ -6,11 +6,15 @@ import ControlledAccordions from "../components/accordion"
 import TopBar from "../components/layout/topBar"
 
 export default function Tributario() {
+  const menu = [
+    {id:19, menu:'Tributário', path:'/dashboard/tributario'}, 
+    {id:20, menu:'Estratégico', path:'/dashboard/estrategico'}
+  ]
   return (
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Tributário' menu={{menu1:'Home', menu2:'Calculos', menu3:'Lancamentos'}}/>
+        <TopBar tituloCabecalho ='Tributário' menu={menu}/>
         <Busca/>
         <ControlledAccordions/>
         <ControlledAccordions/>

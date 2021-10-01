@@ -7,11 +7,15 @@ import TopBar from "../components/layout/topBar"
 import Enquadramento from "../components/accordions/enquadramento"
 
 export default function Home() {
+  const menu = [
+    {id:13,menu:'Tributário', path:'/dashboard/tributario'}, 
+    {id:14,menu:'Estratégico', path:'/dashboard/estrategico'}
+  ]
   return (
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho='HOME' menu={{menu1:'Home', menu2:'Memorandos'}}/>
+        <TopBar tituloCabecalho='HOME' menu={menu}/>
         <Busca/>
         <ControlledAccordions/>
         <Enquadramento/>
