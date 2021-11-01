@@ -177,7 +177,7 @@ export default function TopBar(props){
                 </div>
                 <div className={styles.colunaDireita}>
                     <div className={styles.colunaDireita_esquerda}>
-                    <image src='/Gestão-Fiscal-e-Tributária 1.png' alt='carimbo'/>
+                    <img src='logo_sis.png' alt='carimbo'/>
                     </div>
                     <div className={styles.colunaDireita_direita}>
                         <div className={styles.caixaUsuario}>

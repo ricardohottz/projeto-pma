@@ -2,13 +2,13 @@ import AccordionPadrao from '../accordion'
 
 
 
-export default function Tiaf(){
+export default function Autorizacao(){
     
     return(
-        <AccordionPadrao disabled title='TIAF'>
+        <AccordionPadrao title='Autorização'>
             <main>
                 <div >
-                    TIAF
+                    Autorizacao
                 </div>
             </main>
         </AccordionPadrao>

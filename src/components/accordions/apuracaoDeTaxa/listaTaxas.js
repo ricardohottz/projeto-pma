@@ -40,42 +40,42 @@ export default function ListaTaxas() {
   };
 
   return (
-    <div style={{display:'flex', marginLeft:'30px' }}>
+    <div style={{display:'flex', marginLeft:'20px' }}>
 
 
     <FormControl style={{ width:'810px'}} component="fieldset">
      
       <RadioGroup className={classes.campoTaxas} aria-label="gender" name="gender1" value={value} onChange={handleChange}>
         <div className={classes.colunaCampoTaxas}>
-            <FormControlLabel value="tvcf" control={<Radio />} label="Taxa de vigilância, controle e fiscalização" />
+            <FormControlLabel style={{height:'50px'}}value="tvcf" control={<Radio />} label="Taxa de vigilância, controle e fiscalização" />
             <Divider/>
-            <FormControlLabel value="licenca" control={<Radio />} label="Taxa de licença para estabelecimento" />
+            <FormControlLabel style={{height:'50px'}} value="licenca" control={<Radio />} label="Taxa de licença para estabelecimento" />
             <Divider/>
-            <FormControlLabel value="eventual" control={<Radio />} label="Taxa de autorização p exercício de at. eventual" />
+            <FormControlLabel style={{height:'50px'}} value="eventual" control={<Radio />} label="Taxa de autorização p exercício de at. eventual" />
             <Divider/>
-            <FormControlLabel value="obra_publica" control={<Radio />} label="Taxa de licen. de obras e serv. em lougrad. púb." />
+            <FormControlLabel style={{height:'50px'}} value="obra_publica" control={<Radio />} label="Taxa de licen. de obras e serv. em lougrad. púb." />
             <Divider/>
-            <FormControlLabel value="obra_particular" control={<Radio />} label="Taxa de licen. para execução de obra particular" />
+            <FormControlLabel style={{height:'50px'}} value="obra_particular" control={<Radio />} label="Taxa de licen. para execução de obra particular" />
             <Divider/>
-            <FormControlLabel value="licanca_area" control={<Radio />} label="Taxa de licença para uso de área pública" />
+            <FormControlLabel style={{height:'50px'}} value="licanca_area" control={<Radio />} label="Taxa de licença para uso de área pública" />
             <Divider/>
-            <FormControlLabel value="publicidade" control={<Radio />} label="Taxa de autorização para publicidade" />
+            <FormControlLabel style={{height:'50px'}} value="publicidade" control={<Radio />} label="Taxa de autorização para publicidade" />
             
         </div>
         <div className={classes.colunaCampoTaxas}>
-            <FormControlLabel value="female" control={<Radio />} label="Taxa de inspeção sanitária" />
+            <FormControlLabel style={{height:'50px'}} value="female" control={<Radio />} label="Taxa de inspeção sanitária" />
             <Divider/>
-            <FormControlLabel value="male" control={<Radio />} label="Taxa de fiscalização de transporte de passageiro" />
+            <FormControlLabel style={{height:'50px'}} value="male" control={<Radio />} label="Taxa de fiscalização de transporte de passageiro" />
             <Divider/>
-            <FormControlLabel value="other" control={<Radio />} label="Taxa de coleta e destinação final do lixo" />
+            <FormControlLabel style={{height:'50px'}} value="other" control={<Radio />} label="Taxa de coleta e destinação final do lixo" />
             <Divider/>
-            <FormControlLabel value="disabled" disabled control={<Radio />} label="Taxa de iluminação pública" />
+            <FormControlLabel style={{height:'50px'}} value="disabled" disabled control={<Radio />} label="Taxa de iluminação pública" />
             <Divider/>
-            <FormControlLabel value="expediente" control={<Radio />} label="Taxa de expediente" />
+            <FormControlLabel style={{height:'50px'}} value="expediente" control={<Radio />} label="Taxa de expediente" />
             <Divider/>
-            <FormControlLabel value="funerarios" control={<Radio />} label="Taxa de serviços funerários" />
+            <FormControlLabel style={{height:'50px'}} value="funerarios" control={<Radio />} label="Taxa de serviços funerários" />
             <Divider/>
-            <FormControlLabel value="sanitaria" control={<Radio />} label="Taxa de inspeção sanitária" />
+            <FormControlLabel style={{height:'50px'}} value="sanitaria" control={<Radio />} label="Taxa de inspeção sanitária" />
             
         </div>
         

@@ -9,9 +9,10 @@ export default function Dashboard() {
     ssr: false
   })
   const menu = [
-    {id:'1', menu:'Tributário', path:'/dashboard/tributario'}, 
-    {id:'2',menu:'Estratégico', path:'/dashboard/estrategico'}
-]
+    {id:3, menu:'Tributário', path:'/dashboard/tributario'}, 
+    {id:4, menu:'Estratégico', path:'/dashboard/estrategico'},
+    {id:5, menu:'Repasses', path:'/dashboard/repasses'}
+  ]
   return (
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 

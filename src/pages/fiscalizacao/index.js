@@ -12,6 +12,7 @@ import Issqn from '../../components/accordions/issqn'
 import Tiaf from '../../components/accordions/tiaf'
 import LocalizacaoDeObra from '../../components/accordions/localizacaoDeObra'
 import SituacaoEconomica from "../../components/accordions/situacaoEconomica"
+import Autorizacao from "../../components/accordions/autorizacao"
 
 
 
@@ -37,9 +38,10 @@ export default function FiscalizacaoPage() {
         <LocalizacaoDeObra/>
         <SituacaoEconomica/>
         <Comunicacao/>
+        <Autorizacao/>
       
         <h2>Subtitulo</h2>
-        <Button color='primary' variant='contained'>Clique aqui</Button>
+        <Button onClick={()=>console.log('imprime botão')} color='primary' variant='contained'>Clique aqui</Button>
         </>
 
     </Layout>
