@@ -14,7 +14,7 @@ export default function Relatorios() {
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Relatórios' menu={menu}/>
+        <TopBar tituloCabecalho ='Relatórios' menu={menu} subtitulo='Relatórios / Repasses'/>
         <Busca/>
         <ControlledAccordions/>
         <ControlledAccordions/>

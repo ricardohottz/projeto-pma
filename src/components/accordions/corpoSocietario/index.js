@@ -128,7 +128,7 @@ export default function CorpoSocietario(){
                 <LinkIcon color='disabled' className={classes.bloco}/>
               </div>
               <div className={classes.corpoSocietario_col3}>
-                  <Button variant="outlined" color="primary" startIcon={<PersonIcon/>}>Visitar Perfil</Button>
+                  <Button style={{padding:'20px', border:'3px solid #0989FF', color:'#0989FF'}} variant='outlined' startIcon={<PersonIcon/>}>Perfil</Button>
               </div>
           </div>
             

@@ -18,7 +18,7 @@ export default function Dashboard() {
 
         <>
 
-        <TopBar tituloCabecalho ='Dashboard' menu={menu} />
+        <TopBar tituloCabecalho ='Dashboard' menu={menu} subtitulo='Dashboard / Estratégico'/>
             
           
           <div style={{display:'flex', flexDirection:'row', marginTop:'5px'}}>

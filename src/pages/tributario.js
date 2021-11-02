@@ -14,7 +14,7 @@ export default function Tributario() {
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Tributário' menu={menu}/>
+        <TopBar tituloCabecalho ='Tributário' menu={menu} subtitulo='Tributário / index'/>
         <Busca/>
         <ControlledAccordions/>
         <ControlledAccordions/>

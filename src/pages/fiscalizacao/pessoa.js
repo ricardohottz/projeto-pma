@@ -27,18 +27,10 @@ export default function FiscalizacaoPage() {
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Fiscalizacao' menu={menu} subtitulo='Fiscalização / Econômico'/>
+        <TopBar tituloCabecalho ='Fiscalizacao' menu={menu} subtitulo='Fiscalização / Pessoa'/>
         <Busca/>
-        <Fiscalizacao/>
-        <Issqn/>
-        <Tiaf/>
-        <AutoDeInfracao/>
-        <ApuracaoDeTaxa/>
-        <Intimacao/>
+        Pessoa
         <LocalizacaoDeObra/>
-        <SituacaoEconomica/>
-        <Comunicacao/>
-        <Autorizacao/>
       
         <h2>Subtitulo</h2>
         <Button onClick={()=>console.log('imprime botão')} color='primary' variant='contained'>Clique aqui</Button>

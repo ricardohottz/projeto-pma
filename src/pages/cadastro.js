@@ -22,7 +22,7 @@ export default function Cadastro() {
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Cadastro' menu={menu}/>
+        <TopBar tituloCabecalho ='Cadastro' menu={menu} subtitulo='Cadastro / Econômico'/>
         <Busca/>
 
         <Localizacao/>

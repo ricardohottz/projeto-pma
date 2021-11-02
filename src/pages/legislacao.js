@@ -16,7 +16,7 @@ export default function Legislacao() {
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Legislação' menu={menu}/>
+        <TopBar tituloCabecalho ='Legislação' menu={menu} subtitulo='Legislação / Repasses'/>
         <Example/>
         
         <Busca/>

@@ -15,7 +15,7 @@ export default function Dashboard() {
 
         <>
 
-        <TopBar   tituloCabecalho ='Dashboard' menu={menu}/>
+        <TopBar   tituloCabecalho ='Dashboard' menu={menu} subtitulo='Dashboard / Repasses'/>
          
           <GraphicCards/>
           <GraficoPrincipal/>

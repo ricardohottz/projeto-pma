@@ -168,7 +168,7 @@ export default function TopBar(props){
                     </div>
                     <div className={styles.tituloSecao}>
                         <div className={styles.tituloSecaoPrincipal}>{props.tituloCabecalho}</div>
-                        <div className={styles.tituloSecaosecundario}>cadastro / empresas</div>
+                        <div className={styles.tituloSecaosecundario}>{props.subtitulo}</div>
                     </div>
                     <div className={styles.menuHorizontal}>
                         {montaMenuHorizontal(props)}
@@ -177,7 +177,7 @@ export default function TopBar(props){
                 </div>
                 <div className={styles.colunaDireita}>
                     <div className={styles.colunaDireita_esquerda}>
-                    <img src='logo_sis.png' alt='carimbo'/>
+                    <img src='/logo_sis.png' alt='carimbo'/>
                     </div>
                     <div className={styles.colunaDireita_direita}>
                         <div className={styles.caixaUsuario}>

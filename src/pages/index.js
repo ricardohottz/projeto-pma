@@ -15,7 +15,7 @@ export default function Home() {
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho='HOME' menu={menu}/>
+        <TopBar tituloCabecalho='HOME' menu={menu} subtitulo='Início'/>
         <Busca/>
         <ControlledAccordions/>
         <Enquadramento/>
