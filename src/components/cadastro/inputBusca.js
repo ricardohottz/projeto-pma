@@ -10,7 +10,8 @@ const usestyles = makeStyles((theme) => ({
         width: '490px',
         border: 'none',
         borderRadius: '6px',
-        color:'#0362A7'
+        color:'#0362A7',
+        letterSpacing:'.1rem'
 
     },
     

@@ -45,7 +45,7 @@ export default function TopMenuBar(){
             </div>
             <div className={styles.textoTitulo}> 
                 Plataforma Integrada de Consulta Interna
-                <div style={{fontWeight:'bold', fontSize:'20px', padding:'0px'}}>P L A I C I</div>
+                <div style={{fontWeight:'bold', fontSize:'10px', padding:'0px', letterSpacing:'0.150rem'}}>P • L • A • I • C • I</div>
             </div>
         </div>
         <div className={styles.versao}>Versão Beta</div>
