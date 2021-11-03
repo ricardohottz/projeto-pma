@@ -15,7 +15,8 @@ const usestyles = makeStyles((theme) => ({
         fontSize: '20px',
         width: '490px',
         border: 'none',
-        borderRadius: '6px'
+        borderRadius: '6px',
+        
     },
     
     busca:{
@@ -34,6 +35,12 @@ const usestyles = makeStyles((theme) => ({
         fontSize:'.9em',
         borderRadius:'6px',
         height: '75px',
+        
+        '&:hover': {
+            background: "#0D6CB0",
+            },
+        letterSpacing:'.12rem'
+       
     }
 
 }))
@@ -71,7 +78,7 @@ export default function Busca(){
                 <form action='/api/hello' method='GET'>   
                     <Button className={styles.botao}>Buscar empresa</Button>
                 </form>
-            </div>
+            </div> 
 
        
         
