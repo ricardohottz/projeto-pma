@@ -1,6 +1,6 @@
 import Layout from "../../components/layout"
 import {Button} from '@material-ui/core'
-import Busca from '../../components/cadastro/busca'
+import Busca from '../../components/busca_pessoa/busca'
 import ControlledAccordions from "../../components/accordion"
 import TopBar from "../../components/layout/topBar"
 import ApuracaoDeTaxa from '../../components/accordions/apuracaoDeTaxa'

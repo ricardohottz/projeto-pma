@@ -3365,6 +3365,13 @@
   "resolved" "https://registry.npmjs.org/regexpp/-/regexpp-3.2.0.tgz"
   "version" "3.2.0"
 
+"remask@^0.1.0-alpha.5":
+  "integrity" "sha512-oRVGV7FWDvL6aOcATa/TPyNs78PUr9F1gn2495/J2A4G1B6mSGWKnZfyyc5hfoqLkpxmUdF2LR/pICR2Ox9Ovw=="
+  "resolved" "https://registry.npmjs.org/remask/-/remask-0.1.0-alpha.5.tgz"
+  "version" "0.1.0-alpha.5"
+  dependencies:
+    "vanilla-masker" "^1.2.0"
+
 "require-from-string@^2.0.2":
   "integrity" "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw=="
   "resolved" "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz"
@@ -3953,6 +3960,11 @@
   dependencies:
     "spdx-correct" "^3.0.0"
     "spdx-expression-parse" "^3.0.0"
+
+"vanilla-masker@^1.2.0":
+  "integrity" "sha1-woMOnZlKX+zSJhUGR3wnB/5Yl1Y="
+  "resolved" "https://registry.npmjs.org/vanilla-masker/-/vanilla-masker-1.2.0.tgz"
+  "version" "1.2.0"
 
 "vm-browserify@^1.0.1", "vm-browserify@1.1.2":
   "integrity" "sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ=="

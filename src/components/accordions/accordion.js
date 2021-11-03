@@ -105,7 +105,7 @@ export default function AccordionPadrao({children, title}) {
 
     return (
         <div className={classes.root}>
-          <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+          <Accordion disabled={false} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1bh-content"

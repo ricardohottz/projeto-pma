@@ -31,9 +31,8 @@ const usestyles = makeStyles((theme) => ({
         width:'194px',
         border:'6px solid white',
         color: 'white',
-        fontSize:'.9em',
-        borderRadius:'6px',
-        height: '75px',
+        fontSize:'1.3em',
+        borderRadius:'6px'
     }
 
 }))
@@ -68,9 +67,9 @@ export default function Busca(){
                     style={{ width: '187px', backgroundColor:'white', marginLeft: '15px', borderRadius:'6px', height:'75px', padding:'10px' }}
                     renderInput={(params) => <TextField {...params} label="BUSCA POR" variant="outlined" />}
                 />
-                <form action='/api/hello' method='GET'>   
-                    <Button className={styles.botao}>Buscar empresa</Button>
-                </form>
+                    
+                <Button className={styles.botao}>Buscar pessoa</Button>
+                <div>{inputValue}</div>
             </div>
 
        
