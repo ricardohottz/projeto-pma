@@ -1,6 +1,6 @@
 import Layout from "../../components/layout"
 import {Button} from '@material-ui/core'
-import Busca from '../../components/cadastro/busca'
+import Busca from '../../components/busca_pessoa/busca'
 import ControlledAccordions from "../../components/accordion"
 import TopBar from "../../components/layout/topBar"
 import ApuracaoDeTaxa from '../../components/accordions/apuracaoDeTaxa'
@@ -28,21 +28,12 @@ export default function FiscalizacaoPage() {
     <Layout title = 'Sistema de consulta Fiscal - SEFAZ'>
 
         <>
-        <TopBar tituloCabecalho ='Fiscalizacao' menu={menu} subtitulo='Fiscalização / Econômico'/>
+        <TopBar tituloCabecalho ='Fiscalizacao' menu={menu} subtitulo='Fiscalização / Bancos'/>
         <Busca/>
-        <Fiscalizacao/>
-        <Issqn/>
-        <Tiaf/>
-        <AutoDeInfracao/>
-        <ApuracaoDeTaxa/>
-        <Intimacao/>
-        <LocalizacaoDeObra/>
-        <SituacaoEconomica/>
-        <Comunicacao/>
-        <Autorizacao/>
+        Bancos
+        
       
-        <h2>Subtitulo</h2>
-        <Button onClick={()=>console.log('imprime botão')} color='primary' variant='contained'>Clique aqui</Button>
+        
         </>
 
     </Layout>
