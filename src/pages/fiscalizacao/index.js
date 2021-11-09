@@ -13,7 +13,7 @@ import Tiaf from '../../components/accordions/tiaf'
 import LocalizacaoDeObra from '../../components/accordions/localizacaoDeObra'
 import SituacaoEconomica from "../../components/accordions/situacaoEconomica"
 import Autorizacao from "../../components/accordions/autorizacao"
-
+import Atividade from "../../components/accordions/atividade"
 
 
 export default function FiscalizacaoPage() {
@@ -40,9 +40,8 @@ export default function FiscalizacaoPage() {
         <SituacaoEconomica/>
         <Comunicacao/>
         <Autorizacao/>
-      
-        <h2>Subtitulo</h2>
-        <Button onClick={()=>console.log('imprime botão')} color='primary' variant='contained'>Clique aqui</Button>
+        <Atividade/>
+        
         </>
 
     </Layout>

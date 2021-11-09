@@ -1,0 +1,183 @@
+.container{
+    background-color: #01162F;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+    
+}
+.box{
+    display: flex;
+    flex-direction: row;
+;
+}
+
+.direita{
+    color: white;
+    height: 480px;
+    border-radius: 0px 0px 0px 60px;
+    border: solid #2E4056 3px;
+    width: 500px;
+    border-top: 0px;
+    border-right: 0px;
+    display: flex;
+    flex-direction: column;
+    
+
+    
+
+}
+
+.esquerda{
+    height: 480px;
+    width: 415px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.balaoBox{
+    display: flex;
+
+}
+.balaoBox2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+}
+
+.balaoLogo{
+    background-color: #11243A;
+    width: 388px;
+    height: 179px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pontaBalao{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 13px solid #11243A;
+    margin-top: 130px;
+}
+
+.pontaBalao2{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 13px solid #11243A;
+    margin-bottom: 100px;
+}
+
+.bola{
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    border: solid 3px #2E4056 ;
+    background-color: #01162F;
+    margin-top: 130px;
+    position: relative;
+    left: 9px;
+    z-index: 2;
+}
+.bola2{
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    border: solid 3px #2E4056 ;
+    background-color: #01162F;
+    margin-bottom: 140px;
+    position: relative;
+    right: 9px;
+    z-index: 2;
+}
+
+.balaoTexto{
+    color: white;
+    font-weight: bolder;
+    font-size: 27px;
+    width: 150px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.balaoTexto2{
+    color: white;
+    font-weight: bolder;
+    font-size: 19px;
+    width: 150px;
+    padding-left: 16px;
+    margin-top: 3px;
+}
+
+.balaoImagem{
+    width: 180px;
+    padding:20px; 
+    margin-left: 10px;
+}
+
+.balaoPref{
+    height: 82px;
+    position: relative;
+    bottom: 20px;
+    width: 235px;
+   
+    display: flex;
+    flex-direction: row;
+    background-color: #11243A;
+    
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.colaboradores{
+    display: flex;
+    flex-direction: row;
+
+}
+.iconeColaboradores{
+    margin-left: 30px;
+}
+
+.solicitarAcesso{
+    font-size: 12px;
+}
+.colaboradoresTitulo{
+    font-size: 20px;
+}
+.textoColaboradores{
+    margin-left: 20px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 30px;
+
+}
+
+.styleInput{
+    height: 40px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    margin-top: 35px;
+}
+.styleButton{
+    margin-top: 35px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #0FF04E;
+    color:#161616;
+    padding: 8px 25px; 
+}

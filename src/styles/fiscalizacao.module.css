@@ -1,0 +1,182 @@
+.tabela{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.mural{
+    margin:1px
+}
+.cabecalho{
+    height: 33px;
+    background-color: #1877BB;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    
+    
+    
+}
+
+.titulosCabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.iconesCabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    
+}
+
+.icone{
+    padding: 5px;
+}
+
+/* início de pediodos */
+
+
+.periodo{
+    
+    justify-content: center;
+    display: flex;
+    margin-top:30px;
+    margin-bottom: 40px;
+}
+
+.existencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anoDecadencia{
+    color:#C4C4C4;
+    border: dotted 2px #C4C4C4;
+    width: 60px;
+    padding: 5px 12px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.anoAuditavel{
+    color:white;
+    background-color: #C4C4C4;;
+    border: solid 2px #C4C4C4;
+    width: 60px;
+    padding: 5px 12px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.anoAuditado{
+    color:white;
+    font-weight: bold;
+    background-color: #0D6CB0;
+    
+    border: solid 2px #0D6CB0;
+    width: 60px;
+    padding: 5px 12px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+
+}
+.anoAuditado:hover{
+    background-color: #178F14;
+    border: solid 2px #178F14;
+    transform: scale(1.2);
+    transition: .2s ease-out
+}
+
+.ano{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.anoFiscalizado{
+    color: white
+
+}
+
+.anoNaoFiscalizado{
+    color:white
+}
+
+/*  traço que liga anos */
+.continuaDecadencia{
+    border-top: dotted 2px #C4C4C4;
+    width: 40px;
+    height: 1px;
+    margin-left: 2px;
+}
+
+.continuaAuditavel{
+    border-top: solid 4px #C4C4C4;
+    width: 40px;
+    height: 1px;
+    margin-left: 2px;
+}
+
+.continuaAuditado{
+    border-top: solid 4px #0D6CB0;
+    width: 40px;
+    height: 1px;
+    margin-left: 0px;
+    width: 50px;
+    
+}
+/* termino de traço que liga anos */
+
+.timeLine{
+    height: 4px;
+    border: dashed 2px #C4C4C4;
+   width: 100px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 4px;
+    
+   
+
+}
+
+.timeLineAuditado{
+    height: 4px;
+    border: solid 2px #0D6CB0;
+   width: 100px;
+    margin-top: 27px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+   
+
+}
+.timeLineinicio{
+    height: 4px;
+    border: solid 5px #178F14;
+   width: 4px;
+    margin-top: 27px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 5px;
+    
+   
+
+}
+
+
+
+/* Fim de Período */

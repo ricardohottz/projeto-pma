@@ -14,6 +14,7 @@ import LinkIcon from '@material-ui/icons/Link';
 import PeopleIcon from '@material-ui/icons/People';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import MailIcon from '@material-ui/icons/Mail';
+import { IssContext } from './issqn/context';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -94,18 +95,21 @@ const useStyles = makeStyles((theme) => ({
         }));
 
 
-export default function AccordionPadrao({children, title}) {
+export default function AccordionPadrao(props) {
         const classes = useStyles();
 
     const [expanded, setExpanded] = useState(false);
   
     const handleChange = (panel) => (event, isExpanded) => {
       setExpanded(isExpanded ? panel : false);
+      
     };
 
     return (
+      
         <div className={classes.root}>
-          <Accordion disabled={false} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+         
+          <Accordion disabled={props.disabled} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1bh-content"
@@ -113,15 +117,15 @@ export default function AccordionPadrao({children, title}) {
               
             >
                 <div className={classes.accordionLinha}>
-                    <PeopleIcon style={{color:'#B2B2B2'}}/>
-                    <Typography displayInline className={classes.heading}>{title}</Typography>
+                    {props.icone()}
+                    <Typography displayInline className={classes.heading}>{props.title}</Typography>
                 
                 </div>
                     
             </AccordionSummary>
             <AccordionDetails>
           
-             {children}
+             {props.children}
             </AccordionDetails>
             
           </Accordion>

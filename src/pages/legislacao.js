@@ -1,10 +1,10 @@
 import Layout from "../components/layout"
 import {Button} from '@material-ui/core'
 import Busca from '../components/cadastro/busca'
-import Cabecalho from "../components/cadastro/cabecalho"
+
 import ControlledAccordions from "../components/accordion"
 import TopBar from "../components/layout/topBar"
-import Example from "../components/charts/issqn"
+
 
 
 export default function Legislacao() {
@@ -17,7 +17,7 @@ export default function Legislacao() {
 
         <>
         <TopBar tituloCabecalho ='Legislação' menu={menu} subtitulo='Legislação / Repasses'/>
-        <Example/>
+      
         
         <Busca/>
         <ControlledAccordions/>

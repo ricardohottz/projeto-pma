@@ -6,12 +6,12 @@ const usestyles = makeStyles((theme) => ({
     input:{
         padding:'20px',
         height: '75px',
-        fontSize: '20px',
+        fontSize: '24px',
         width: '490px',
         border: 'none',
         borderRadius: '6px',
         color:'#0362A7',
-        letterSpacing:'.1rem'
+        letterSpacing:'.05rem'
 
     },
     
@@ -52,7 +52,7 @@ export default function InputBusca({inputValue}){
                 className={classes.input}
                 name='busca'
                 type='text'
-                placeholder='Selecione o tipo de busca'
+                placeholder='SELECIONE O TIPO DE BUSCA'
                 
                 value=''
                 style={{backgroundColor:'#DDDDDD', color:'black'}}
@@ -65,7 +65,7 @@ export default function InputBusca({inputValue}){
                 className={classes.input}
                 name='busca'
                 type='text'
-                placeholder='Digite o CPF para buscar'
+                placeholder='DIGITE O CPF PARA BUSCAR'
                 onChange={onChangeCPF}
                 value={value}
             />)}
@@ -76,7 +76,7 @@ export default function InputBusca({inputValue}){
                 className={classes.input}
                 name='busca'
                 type='text'
-                placeholder='Digite o CNPJ para buscar'
+                placeholder='DIGITE O CNPJ PARA BUSCAR'
                 onChange={onChangeCNPJ}
                 value={value}
             />)}
@@ -88,7 +88,7 @@ export default function InputBusca({inputValue}){
                 className={classes.input}
                 name='busca'
                 type='text'
-                placeholder='Digite o nome para buscar'
+                placeholder='DIGITE O NOME PARA BUSCAR'
                 onChange={onChangeNome}
                 value={value}
             />)}
@@ -100,7 +100,7 @@ export default function InputBusca({inputValue}){
                 className={classes.input}
                 name='busca'
                 type='text'
-                placeholder='Digite a Inscrição para buscar'
+                placeholder='DIGITE A INSCRIÇÃO PARA BUSCAR'
                 onChange={onChangeCNPJ}
                 value={value}
             />)}

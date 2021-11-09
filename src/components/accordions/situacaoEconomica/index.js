@@ -1,18 +1,22 @@
 import AccordionPadrao from '../accordion'
+import { useState } from 'react';
+import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 
-import GraficosISS from '../../charts/issqn'
+
 
 
 
 export default function SituacaoEconomica(){
+    const icone = () => <TrendingUpIcon style={{color:'#B2B2B2'}}/>
+    const [disabled, setDisabled] = useState(false)
     
     return(
         <>
     
-        <AccordionPadrao title='Situação Econômica'>
+        <AccordionPadrao title='Situação Econômica' disabled={disabled} icone={icone}>
             
                 
-                    <GraficosISS/>
+                    Situação economica
                 
             
         </AccordionPadrao>

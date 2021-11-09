@@ -5,7 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { useState } from 'react';
-import { Icon } from '@material-ui/core';
+
 import { Button } from '@material-ui/core';
 import { Divider } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
