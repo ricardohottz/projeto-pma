@@ -5,7 +5,7 @@ export default function AnoExistencia(){
         
         // Período decaído 
 
-        <>
+        <div style={{overflowX:'hidden', display:'flex', flexDirection:'row',width:'880px', cursor: 'grab'}}>
         <div className={style.periodo}>
             <div className={style.existencia}>
                 <div className={style.ano}>
@@ -151,7 +151,55 @@ export default function AnoExistencia(){
             </div>
         </div>
           {/* Periodo auditável */}
+        {/* Periodo auditável */}
 
+
+        <div className={style.periodo}>
+            <div className={style.existencia}>
+                <div className={style.ano}>
+
+                    <div className={style.anoAuditavel}>
+                        
+                        2016
+                    </div>
+
+                    <div className={style.continuaAuditavel}></div>
+
+                </div>
+                <div style={{display:'flex', alignItems:'center'}}>
+                    <div className={style.timeLine}></div>
+                    
+
+                </div>
+                
+                
+            </div>
+        </div>
+
+        {/* Periodo auditável */}
+
+
+        <div className={style.periodo}>
+            <div className={style.existencia}>
+                <div className={style.ano}>
+
+                    <div className={style.anoAuditavel}>
+                        
+                        2016
+                    </div>
+
+                    <div className={style.continuaAuditavel}></div>
+
+                </div>
+                <div style={{display:'flex', alignItems:'center'}}>
+                    <div className={style.timeLine}></div>
+                    
+
+                </div>
+                
+                
+            </div>
+        </div>
 
           <div className={style.periodo}>
             <div className={style.existencia}>
@@ -173,9 +221,11 @@ export default function AnoExistencia(){
                 
                 
             </div>
+
+            
         </div>
 
-        </>
+        </div>
 
 
     )

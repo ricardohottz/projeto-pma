@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core"
+import style from '../../styles/caixaUfisa.module.css'
 
 const ufisa =[
     {ano:2010,valor:'R$100,00'},
@@ -8,68 +8,15 @@ const ufisa =[
 
 ]
 
-const useStyles = makeStyles((theme) => ({
-    caixaUfisa:{
-        width:'139px',
-        backgroundColor:'white',
-        borderRadius:'7px',
-        height:'47px',
-        padding:'2px',
-        display:'flex',
-        flexDirection:'row'
-        
-    },
-    valorUfisa:{
-        display: 'flex',
-        flexDirection:'row',
-       
-        height:'20px',
-        width:'115px',
-        paddingLeft:'4px'
-       
-    },
-    setaUfisa: {
-        position:'absolute',
-        top:'92px',
-        left:'1155px',
-        alignItems:'right'
-    },
-    tituloUfisa:{
-        textAlign:'center',
-        width:'125px',
-        fontWeight:'bold',
-        color:'black',
-        paddingTop:'2px'
-    },
-    CaixaValorUfisa:{
-        fontWeight:'bolder',
-        width:'100px',
-        fontSize:'15px',
-        textAlign:'center',
-        alignItems:'center'
-    },
-}))
 
 
 export default function CaixaUfisa(){
-    const styles = useStyles()
+    
     return(
-        <div className={styles.caixaUfisa}>
+        <div className={style.caixaUfisa}>
+            <div className={style.ufisaRotativa}>top</div>
                                
-                               <div > 
-                                    <div className={styles.tituloUfisa}>UFISA 2010</div>
-
-                                    <div className={styles.valorUfisa}>
-                                        <div><image src='/mdi_cash-marker.png' alt='ufisa'/></div>
-                                        <div className={styles.CaixaValorUfisa}>R$ 100,00</div>
-                                </div>
-                                <div className={styles.setaUfisa}>
-                                    {/* usar float action button */}
-                                    <div><image src='/seta-direita.png' alt='ufisa'/></div>
-                                    <div><image src='/seta-esquerda.png' alt='ufisa'/></div>
-                                </div>
-
-                            </div>
-                        </div>
+                               
+        </div>
     )
 }

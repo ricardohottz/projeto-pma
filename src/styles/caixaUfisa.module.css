@@ -1,0 +1,14 @@
+.caixaUfisa{
+    height: 150px;
+    width: 166px;
+    border-radius: 6px;
+    background-color: #1D84CF;
+    display: flex;
+    flex-direction: column;
+}
+
+.ufisaRotativa{
+    background-color: #105A90;
+    height: 50px;
+    border-radius: 6px 6px 0px 0px;
+}

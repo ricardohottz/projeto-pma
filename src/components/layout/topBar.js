@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import { Avatar, ListItemIcon } from '@material-ui/core';
-import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
+
 import { Button } from '@material-ui/core';
 import {Link} from '@material-ui/core'
 import CaixaUfisa from './caixaUfisa';
@@ -24,14 +23,15 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         flexDirection:'column',
         height:'150px',
-        width:'600px'
+        width:'760px',
+      
     },
     colunaDireita:{
         padding:'10px', 
         display:'flex',
         flexDirection:'row',
         height:'150px',
-        width:'400px'
+        width:'350px'
     },
     colunaDireita_direita:{
         display:'flex',
@@ -42,8 +42,8 @@ const useStyles = makeStyles((theme) => ({
     },
     colunaDireita_esquerda:{
         display:'flex',
-        width:'200px',
-        paddingLeft:'30px'
+        // width:'150px',
+        // paddingLeft:'30px'
     },
     topo:{
         paddingTop:'10px', 
@@ -71,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
     },
     botao:{
         backgroundColor:'#0FF04E',
-        marginLeft:'7px'
+        padding:'10px 15px',
+        marginLeft: '20px'
     },
     tituloSecao:{
         paddingTop:'15px',
@@ -86,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
         textShadow:'2px 2px #000111'
     },
     tituloSecaosecundario:{
-        marginLeft:'100px',
+        marginLeft:'260px',
         fontSize:'20px',
         fontWeight:'bold',
     },
@@ -120,7 +121,7 @@ export default function TopBar(props){
             <div className={styles.topo}>
                 <div className={styles.colunaCentral}>
                     <div className={styles.searchCampo}>
-                        <input style={{padding:'10px',borderRadius:'7px',width:'470px', border:'0px'}} type="text" placeholder="BUSCAR POR PALAVRA CHAVE"/>
+                        <input style={{padding:'10px',borderRadius:'7px',width:'600px', border:'0px'}} type="text" placeholder="BUSCAR POR PALAVRA CHAVE"/>
                         <Button className={styles.botao}>Buscar</Button>
                     </div>
                     <div className={styles.tituloSecao}>
@@ -134,18 +135,9 @@ export default function TopBar(props){
                 </div>
                 <div className={styles.colunaDireita}>
                     <div className={styles.colunaDireita_esquerda}>
-                    <img src='/logo_sis.png' alt='carimbo'/>
-                    </div>
+                                        </div>
                     <div className={styles.colunaDireita_direita}>
-                        <div className={styles.caixaUsuario}>
-                            <Avatar>
-                                <AccountCircleOutlinedIcon/>
-                            </Avatar>
-                            <div className={styles.caixaUsuarioTexto}>
-                                <div>Ricardo hottz</div>
-                                <div>Minha conta</div>
-                            </div>
-                        </div>
+                        
                         <CaixaUfisa/>
                     </div>
                 </div>
