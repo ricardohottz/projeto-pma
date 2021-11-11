@@ -5,10 +5,96 @@
     background-color: #1D84CF;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
 }
 
 .ufisaRotativa{
     background-color: #105A90;
-    height: 50px;
+    width: 166px;
+    height: 46px;
     border-radius: 6px 6px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    
+    
+}
+.ufisaRotativa li{
+    flex-direction: column;
+    color:white;
+    margin-right: 38px;
+    
+    /* border: 1px solid blue; */
+    text-align: center; 
+    
+
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-right: 34px;
+    justify-content: center;
+   
+    
+   /* border: 1px solid blue; */
+}
+
+.button{
+    
+    
+    border: none;
+    background-color: transparent;
+    outline: none;
+    background-repeat:no-repeat;
+    padding: 0;
+    padding: 4px;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    border-bottom: 2px dotted #5DB7F8;
+    width: 90%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.usuarioNome{
+    color:black;
+    margin-left: 7px;
+}
+
+.usuarioAvatar{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.annoucement{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+ 
+   padding-left: 10px;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+.annoucementIcones{
+    display: flex;
+    flex-direction: row;
+    width: 65px;
+     
+     justify-content: space-between;
+   
+
 }

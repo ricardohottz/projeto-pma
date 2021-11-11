@@ -9,8 +9,9 @@ const usestyles = makeStyles((theme) => ({
         fontSize: '20px',
         width: '490px',
         border: 'none',
-        borderRadius: '6px'
-
+        borderRadius: '6px',
+        // transition: 'opacity 0.5s',
+        opacity: '0%'
     },
     
 
