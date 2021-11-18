@@ -1,7 +1,6 @@
 import Layout from "../components/layout"
 import {Button} from '@material-ui/core'
 import Busca from '../components/cadastro/busca'
-import Cabecalho from "../components/cadastro/cabecalho"
 import ControlledAccordions from "../components/accordion"
 import TopBar from "../components/layout/topBar"
 

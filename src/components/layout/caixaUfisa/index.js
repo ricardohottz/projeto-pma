@@ -1,7 +1,9 @@
 import style from '../../../styles/caixaUfisa.module.css'
 import { Button } from '@material-ui/core'
 import ClearIcon from '@material-ui/icons/Clear';
-
+import Badge from '@material-ui/core/Badge';
+import MailIcon from '@material-ui/icons/Mail';
+import AddCommentIcon from '@material-ui/icons/AddComment';
 import {MyCarousel} from './ufisaRotativa'
 
 const ufisa =[
@@ -29,8 +31,16 @@ export default function CaixaUfisa(){
             </div >
             <div className={style.annoucement}>
                 <div className={style.annoucementIcones}>
-                    <div style={{padding:'0px', marginTop:'3px'}}><img alt='recados' src='/iconeMail.svg'/></div>
-                    <div style={{padding:'0px', marginTop:'1px' }}><img alt='recados' src='/iconeAnnouncement.svg'/></div>
+                    <div style={{padding:'0px', marginTop:'4px'}}>
+                        <Badge badgeContent={14} color="primary">
+                            <MailIcon style={{color:'white'}} />
+                        </Badge>
+                    </div>
+                    <div style={{padding:'0px', marginTop:'4px' }}>
+                        <Badge badgeContent={14} color="primary">
+                            <AddCommentIcon style={{color:'white'}} />
+                        </Badge>
+                    </div>
                 </div>
                 <div style={{marginRight:'6px'}}>
                     <Button  size="small" color='info' startIcon={<ClearIcon />}>Sair</Button>

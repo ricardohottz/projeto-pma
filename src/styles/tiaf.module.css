@@ -1,0 +1,166 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: #E1E1E1;
+    position: relative ;
+    top:17px
+}
+
+.passoAPasso{
+    background-color: #E1E1E1;
+    width: 204px;
+    /* height: 100vh; */
+    border-left: dashed 3px #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #C4C4C4;
+}
+
+.inserir{
+
+    border-radius: 20px 0px 20px 0px;
+    background-color: #2F2E2E;
+    width: 689px;
+    padding:25px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloPassoAPasso{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    
+}
+
+.img{
+    margin: 5px;
+}
+.texto{
+    font-size: 20px;
+    color: #1877BB;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.sequenciaDesabilitadaNumero{
+    border: solid 1px #C4C4C4;
+    background-color: white;
+    color: #C4C4C4;
+    font-weight: bolder;
+    border-radius: 23px;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.sequenciaDesabilitadaDetalhe{
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    color: #C4C4C4;
+    width: 140px;
+    
+}
+
+.sequenciaHabilitadaNumero{
+    
+    background-color: #FF7A00;
+    color: white;
+    font-weight: bolder;
+    border-radius: 23px;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.sequenciaHabilitadaDetalhe{
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    color: #FF7A00;
+    width: 140px;
+    
+}
+
+
+.passo{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+
+/* Formulário  */
+
+.formTiaf{
+    height: 50px;
+    border-radius: 5px;
+    border: solid 4px #FF7A00;
+    width: 630px;
+    padding: 6px;
+    font-size: 17px;
+   
+   
+  
+}
+
+.button{
+        background-color:#404040; 
+        border:4px solid #FF7A00;
+        height:52px; 
+        margin-left:40px; 
+        width:140px; 
+        margin-bottom:3px; 
+        color:#FF7A00
+}
+.resumo{
+    height: 45px;
+    border-radius: 5px;
+    background-color: #6D6D6D;
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+    width: 630px;
+    padding-left: 10px;
+    padding-top: 12px;
+    margin-top: 30px;
+
+}
+
+.detalhesArtigo{
+    height: 150px;
+    border-radius: 5px;
+    background-color: #6D6D6D;
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+    width: 630px;
+    padding-left: 10px;
+    padding-top: 9px;
+    margin-top: 20px;
+
+}
+
+.conjuntoBotoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.opacaoCarregada{
+    display: flex;
+    flex-direction: row;
+    background-color: #1A1919;
+    margin-top: 20px;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+   
+
+}

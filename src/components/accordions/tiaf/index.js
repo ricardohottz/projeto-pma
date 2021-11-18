@@ -1,6 +1,8 @@
 import AccordionPadrao from '../accordion'
 import { useState } from 'react';
 import PolicyIcon from '@material-ui/icons/Policy';
+import InserirTiaf from './inserirTiaf';
+
 
 
 
@@ -13,9 +15,10 @@ export default function Tiaf(){
     return(
         <AccordionPadrao  title='TIAF' disabled={disabled} icone={icone}>
             <main>
-                <div >
-                    TIAF
-                </div>
+                <div>Ricardo</div>
+                <div>Ricardo</div>
+                <div>Ricardo</div>
+                <InserirTiaf/>
             </main>
         </AccordionPadrao>
     )

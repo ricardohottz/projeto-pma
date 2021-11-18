@@ -10,8 +10,8 @@ import { buscaPor } from './context';
 
 const usestyles = makeStyles((theme) => ({
     input:{
-        padding:'20px',
-        height: '75px',
+        padding:'15px',
+        height: '18px',
         fontSize: '20px',
         width: '490px',
         border: 'none',
@@ -33,7 +33,14 @@ const usestyles = makeStyles((theme) => ({
         color: 'white',
         fontSize:'1.3em',
         borderRadius:'6px'
-    }
+    },
+    
+    inputRoot: {
+       "& .MuiOutlinedInput-notchedOutline": {
+      
+      border:'0px'
+    },
+      }
 
 }))
 
@@ -63,8 +70,9 @@ export default function Busca(){
                         setInputValue(newInputValue);
                         
                             }}
+                    classes={styles}
                     getOptionSelected={(option, value) => option.value === value.value}
-                    style={{ width: '187px', backgroundColor:'white', marginLeft: '15px', borderRadius:'6px', height:'75px', padding:'10px' }}
+                    style={{ width: '187px', backgroundColor:'white', marginLeft: '15px', borderRadius:'6px', padding:'10px', }}
                     renderInput={(params) => <TextField {...params} label="BUSCA POR" variant="outlined" />}
                 />
                     

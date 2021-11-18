@@ -14,6 +14,7 @@ import LocalizacaoDeObra from '../../components/accordions/localizacaoDeObra'
 import SituacaoEconomica from "../../components/accordions/situacaoEconomica"
 import Autorizacao from "../../components/accordions/autorizacao"
 import Atividade from "../../components/accordions/atividade"
+import CardEmpresa from '../../components/cardEmpresa'
 
 
 export default function FiscalizacaoPage() {
@@ -30,6 +31,7 @@ export default function FiscalizacaoPage() {
         <>
         <TopBar tituloCabecalho ='Fiscalizacao' menu={menu} subtitulo='Fiscalização / Econômico'/>
         <Busca/>
+        <CardEmpresa/>
         <Fiscalizacao/>
         <Issqn/>
         <Tiaf/>

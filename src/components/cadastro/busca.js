@@ -11,7 +11,7 @@ import { buscaPor } from './context';
 const usestyles = makeStyles((theme) => ({
     input:{
         padding:'20px',
-        height: '75px',
+        height: '15px',
         fontSize: '20px',
         width: '490px',
         border: 'none',
@@ -21,8 +21,8 @@ const usestyles = makeStyles((theme) => ({
     
     busca:{
         padding: '40px',
-        paddingTop:'40px',
-        paddingBottom:'30px',
+        paddingTop:'30px',
+        paddingBottom:'15px',
         display:'flex',
         flexDirection:'row'
     },
@@ -41,7 +41,12 @@ const usestyles = makeStyles((theme) => ({
             },
         letterSpacing:'.12rem'
        
-    }
+    },
+    inputRoot: {
+        "& .MuiOutlinedInput-notchedOutline": {
+       
+       border:'0px'
+     }},
 
 }))
 
@@ -71,8 +76,9 @@ export default function Busca(){
                         setInputValue(newInputValue);
                         
                             }}
+                    classes={styles}
                     getOptionSelected={(option, value) => option.value === value.value}
-                    style={{ width: '187px', backgroundColor:'white', marginLeft: '15px', borderRadius:'6px', height:'75px', padding:'10px' }}
+                    style={{ width: '187px', backgroundColor:'white', marginLeft: '15px', borderRadius:'6px', padding:'10px'}}
                     renderInput={(params) => <TextField {...params} label="BUSCA POR" variant="outlined" />}
                 />
                 <form action='/api/hello' method='GET'>   

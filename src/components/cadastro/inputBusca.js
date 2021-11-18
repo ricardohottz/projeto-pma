@@ -52,7 +52,7 @@ export default function InputBusca({inputValue}){
                 className={classes.input}
                 name='busca'
                 type='text'
-                placeholder='SELECIONE O TIPO DE BUSCA'
+                placeholder='SELECIONE A BUSCA'
                 
                 value=''
                 style={{backgroundColor:'#DDDDDD', color:'black'}}

@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-
+import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import { Button } from '@material-ui/core';
 import {Link} from '@material-ui/core'
 import CaixaUfisa from './caixaUfisa';
@@ -27,18 +27,22 @@ const useStyles = makeStyles((theme) => ({
       
     },
     colunaDireita:{
-        padding:'10px', 
+        padding:'0px', 
+        paddingTop:'10px',
+        paddingBottom:'10px',
         display:'flex',
         flexDirection:'row',
         height:'150px',
-        width:'350px'
+        width:'200px',
+        
     },
     colunaDireita_direita:{
         display:'flex',
         flexDirection:'column',
         color:'red',
-        paddingLeft:'10px',
-        width:'200px'
+        paddingLeft:'0px',
+        width:'200px',
+        
     },
     colunaDireita_esquerda:{
         display:'flex',
@@ -79,7 +83,8 @@ const useStyles = makeStyles((theme) => ({
         marginLeft:'40px',
         display:'flex',
         flexDirection:'row',
-        alignItems:'center'
+        alignItems:'center',
+        justifyContent:'space-between'
     },
     tituloSecaoPrincipal:{
         fontSize:'36px',
@@ -87,9 +92,10 @@ const useStyles = makeStyles((theme) => ({
         textShadow:'2px 2px #000111'
     },
     tituloSecaosecundario:{
-        marginLeft:'260px',
+       
         fontSize:'20px',
         fontWeight:'bold',
+        marginRight:'20px'
     },
     menuHorizontal:{
         paddingTop:'20px',
@@ -121,11 +127,14 @@ export default function TopBar(props){
             <div className={styles.topo}>
                 <div className={styles.colunaCentral}>
                     <div className={styles.searchCampo}>
-                        <input style={{padding:'10px',borderRadius:'7px',width:'600px', border:'0px'}} type="text" placeholder="BUSCAR POR PALAVRA CHAVE"/>
+                        <input style={{padding:'10px',borderRadius:'7px',width:'580px', border:'0px'}} type="text" placeholder="BUSCAR POR PALAVRA CHAVE"/>
                         <Button className={styles.botao}>Buscar</Button>
                     </div>
                     <div className={styles.tituloSecao}>
-                        <div className={styles.tituloSecaoPrincipal}>{props.tituloCabecalho}</div>
+                        <div className={styles.tituloSecaoPrincipal}>
+                            {props.tituloCabecalho}
+                            <FingerprintIcon style={{color:'black', marginLeft:'15px'}}/>
+                        </div>
                         <div className={styles.tituloSecaosecundario}>{props.subtitulo}</div>
                     </div>
                     <div className={styles.menuHorizontal}>

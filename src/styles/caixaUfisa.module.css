@@ -1,17 +1,18 @@
 .caixaUfisa{
     height: 150px;
-    width: 166px;
+    width: 188px;
     border-radius: 6px;
     background-color: #1D84CF;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 3px 2px 4px -2px rgba(0,0,0,0.32);
     
 }
 
 .ufisaRotativa{
     background-color: #105A90;
-    width: 166px;
+    width: 188px;
     height: 46px;
     border-radius: 6px 6px 0px 0px;
     display: flex;
@@ -92,7 +93,7 @@
 .annoucementIcones{
     display: flex;
     flex-direction: row;
-    width: 65px;
+    width: 75px;
      
      justify-content: space-between;
    

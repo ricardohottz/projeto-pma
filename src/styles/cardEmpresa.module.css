@@ -1,0 +1,90 @@
+.cardEmpresa{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    height: 149px;
+    width: 695px;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    margin-left: 39px;
+    margin-bottom: 35px;
+    box-shadow: 2px 4px 4px -1px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: left;
+    border: solid 5px white ;
+}
+.cardRecolhimento{
+    height: 149px;
+    width: 193px;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 4px 4px -1px rgba(0,0,0,0.22);
+    display: flex;
+    justify-content: center;
+    border: solid 5px white
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 3px #C4C4C4;
+}
+.nomeEmpresa{
+    height: 35px;
+    background-color: #C4C4C4;
+    color:#676363;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.cnpj{
+    font-size: 17px;
+    color: #2C9C1A;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+.optante{
+    font-size: 17px;
+    color: #2C9C1A;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: 55px;
+}
+
+.inscricao{
+    font-size: 17px;
+    color: #2C9C1A;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+
+.informacao{
+    display: flex;
+    flex-direction: row;
+}
+
+.graficoTitulo{
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    width: 100%;
+   margin-top: 8px;
+   
+}
+
+.graficoRodape{
+    color: #76B05A;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+   margin-top: 2px;
+}
